@@ -24,5 +24,12 @@ namespace Dry_Cleaners.Models
         public int PhoneNumber { get; set; }
         [Display(Name = "Email Address")]
         public string EmailAddress { get; set; }
+        public DryCleanerStores DryCleanerStores { get; set; }
+        [Display(Name = "Dry Cleaners")]
+        public byte DryCleanerStoresID { get; set; }
+        
+        public KioskLocations KioskLocations { get; set; }
+        [Display(Name = "Kiosk Location")]
+        public byte KioskBuildingID { get; set; }
     }
 }

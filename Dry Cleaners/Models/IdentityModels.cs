@@ -21,6 +21,8 @@ namespace Dry_Cleaners.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Customer> Customer { get; set; }
+        public DbSet<DryCleanerStores> DryCleanerStores { get; set; }
+        public DbSet<KioskLocations> KioskLocations { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

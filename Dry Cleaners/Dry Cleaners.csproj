@@ -207,10 +207,40 @@
     <Compile Include="Migrations\201609151833458_InitialModel.Designer.cs">
       <DependentUpon>201609151833458_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609190113185_AddDryCleanerStores.cs" />
+    <Compile Include="Migrations\201609190113185_AddDryCleanerStores.Designer.cs">
+      <DependentUpon>201609190113185_AddDryCleanerStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609190121007_PopulateDryCleanerStores.cs" />
+    <Compile Include="Migrations\201609190121007_PopulateDryCleanerStores.Designer.cs">
+      <DependentUpon>201609190121007_PopulateDryCleanerStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609190201344_PopulateDryCleanerStoresAgain.cs" />
+    <Compile Include="Migrations\201609190201344_PopulateDryCleanerStoresAgain.Designer.cs">
+      <DependentUpon>201609190201344_PopulateDryCleanerStoresAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609190250367_UpdatedCustomerModel.cs" />
+    <Compile Include="Migrations\201609190250367_UpdatedCustomerModel.Designer.cs">
+      <DependentUpon>201609190250367_UpdatedCustomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609190317521_PopulateDryCleaners.cs" />
+    <Compile Include="Migrations\201609190317521_PopulateDryCleaners.Designer.cs">
+      <DependentUpon>201609190317521_PopulateDryCleaners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191622189_PopulateKioskLocations.cs" />
+    <Compile Include="Migrations\201609191622189_PopulateKioskLocations.Designer.cs">
+      <DependentUpon>201609191622189_PopulateKioskLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191628332_PopulationKioskLocationsAgain.cs" />
+    <Compile Include="Migrations\201609191628332_PopulationKioskLocationsAgain.Designer.cs">
+      <DependentUpon>201609191628332_PopulationKioskLocationsAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DryCleanerStores.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KioskLocations.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -294,6 +324,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609151833458_InitialModel.resx">
       <DependentUpon>201609151833458_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609190113185_AddDryCleanerStores.resx">
+      <DependentUpon>201609190113185_AddDryCleanerStores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609190121007_PopulateDryCleanerStores.resx">
+      <DependentUpon>201609190121007_PopulateDryCleanerStores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609190201344_PopulateDryCleanerStoresAgain.resx">
+      <DependentUpon>201609190201344_PopulateDryCleanerStoresAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609190250367_UpdatedCustomerModel.resx">
+      <DependentUpon>201609190250367_UpdatedCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609190317521_PopulateDryCleaners.resx">
+      <DependentUpon>201609190317521_PopulateDryCleaners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191622189_PopulateKioskLocations.resx">
+      <DependentUpon>201609191622189_PopulateKioskLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191628332_PopulationKioskLocationsAgain.resx">
+      <DependentUpon>201609191628332_PopulationKioskLocationsAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

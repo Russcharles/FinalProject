@@ -9,5 +9,7 @@ namespace Dry_Cleaners.ViewModels
     public class NewCustomerViewModel
     {
         public Customer Customer { get; set; }
+        public IEnumerable<DryCleanerStores> DryCleanerStores { get; set; }
+        public IEnumerable<KioskLocations> KioskLocations { get; set; }
     }
 }

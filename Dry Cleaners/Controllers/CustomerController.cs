@@ -28,8 +28,19 @@ namespace Dry_Cleaners.Controllers
         // GET: Customer
         public ActionResult New()
         {
-            return View();
+            var dryCleanerStores = _context.DryCleanerStores.ToList();
+            var kioskLocations = _context.KioskLocations.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                DryCleanerStores = dryCleanerStores,
+                KioskLocations = kioskLocations
+            };
+            
+            
+            return View(viewModel);
+
         }
+       
         [HttpPost]
         public ActionResult Create(Customer customer)
         {
