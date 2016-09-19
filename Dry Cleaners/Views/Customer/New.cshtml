@@ -48,5 +48,13 @@
         @Html.LabelFor(m => m.Customer.KioskBuildingID)
         @Html.DropDownListFor(m => m.Customer.KioskBuildingID, new SelectList(Model.KioskLocations, "ID", "KioskBuilding"), "Select Kiosk Building", new { @class = "form-control" })
     </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.MembershipDetailsID)
+        @Html.DropDownListFor(m => m.Customer.MembershipDetailsID, new SelectList(Model.MembershipType, "ID", "MembershipDetails"), "Select Membership Plan", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.CreditCardTypeID)
+        @Html.DropDownListFor(m => m.Customer.CreditCardTypeID, new SelectList(Model.CreditCardInfo, "ID", "CreditCardType"), "Credit Card Type", new { @class = "form-control" })
+    </div>
     <button type="submit" class="btn btn-primary">Save</button>
 }

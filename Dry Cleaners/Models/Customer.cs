@@ -31,5 +31,13 @@ namespace Dry_Cleaners.Models
         public KioskLocations KioskLocations { get; set; }
         [Display(Name = "Kiosk Location")]
         public byte KioskBuildingID { get; set; }
+        
+        public MembershipType MembershipType { get; set; }
+        [Display(Name = "Membership")]
+        public byte MembershipDetailsID { get; set; }
+
+        public CreditCardInfo CreditCardInfo { get; set; }
+        [Display(Name = "Please Enter Your Credit Card Information:")]
+        public byte CreditCardTypeID { get; set; }
     }
 }

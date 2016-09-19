@@ -30,10 +30,14 @@ namespace Dry_Cleaners.Controllers
         {
             var dryCleanerStores = _context.DryCleanerStores.ToList();
             var kioskLocations = _context.KioskLocations.ToList();
+            var membershipType = _context.MembershipType.ToList();
+            var creditCardInfo = _context.CreditCardInfo.ToList();
             var viewModel = new NewCustomerViewModel
             {
                 DryCleanerStores = dryCleanerStores,
-                KioskLocations = kioskLocations
+                KioskLocations = kioskLocations,
+                MembershipType = membershipType,
+                CreditCardInfo = creditCardInfo
             };
             
             

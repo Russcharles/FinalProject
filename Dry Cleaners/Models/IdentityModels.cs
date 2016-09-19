@@ -23,6 +23,9 @@ namespace Dry_Cleaners.Models
         public DbSet<Customer> Customer { get; set; }
         public DbSet<DryCleanerStores> DryCleanerStores { get; set; }
         public DbSet<KioskLocations> KioskLocations { get; set; }
+        public DbSet<MembershipType> MembershipType { get; set; }
+
+        public DbSet<CreditCardInfo> CreditCardInfo { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

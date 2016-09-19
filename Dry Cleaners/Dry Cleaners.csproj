@@ -235,13 +235,35 @@
     <Compile Include="Migrations\201609191628332_PopulationKioskLocationsAgain.Designer.cs">
       <DependentUpon>201609191628332_PopulationKioskLocationsAgain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609191920323_MembershipDetailsModel.cs" />
+    <Compile Include="Migrations\201609191920323_MembershipDetailsModel.Designer.cs">
+      <DependentUpon>201609191920323_MembershipDetailsModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191930037_Membership.cs" />
+    <Compile Include="Migrations\201609191930037_Membership.Designer.cs">
+      <DependentUpon>201609191930037_Membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191932119_MembershipInfo.cs" />
+    <Compile Include="Migrations\201609191932119_MembershipInfo.Designer.cs">
+      <DependentUpon>201609191932119_MembershipInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609192054120_CreditCardInfo.cs" />
+    <Compile Include="Migrations\201609192054120_CreditCardInfo.Designer.cs">
+      <DependentUpon>201609192054120_CreditCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609192056594_CreditCardType.cs" />
+    <Compile Include="Migrations\201609192056594_CreditCardType.Designer.cs">
+      <DependentUpon>201609192056594_CreditCardType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CreditCardInfo.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\DryCleanerStores.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\KioskLocations.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\NewCustomerViewModel.cs" />
@@ -345,6 +367,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609191628332_PopulationKioskLocationsAgain.resx">
       <DependentUpon>201609191628332_PopulationKioskLocationsAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191920323_MembershipDetailsModel.resx">
+      <DependentUpon>201609191920323_MembershipDetailsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191930037_Membership.resx">
+      <DependentUpon>201609191930037_Membership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191932119_MembershipInfo.resx">
+      <DependentUpon>201609191932119_MembershipInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609192054120_CreditCardInfo.resx">
+      <DependentUpon>201609192054120_CreditCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609192056594_CreditCardType.resx">
+      <DependentUpon>201609192056594_CreditCardType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
