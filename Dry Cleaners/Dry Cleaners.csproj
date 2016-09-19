@@ -255,6 +255,10 @@
     <Compile Include="Migrations\201609192056594_CreditCardType.Designer.cs">
       <DependentUpon>201609192056594_CreditCardType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609192221071_MigrationCheck.cs" />
+    <Compile Include="Migrations\201609192221071_MigrationCheck.Designer.cs">
+      <DependentUpon>201609192221071_MigrationCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CreditCardInfo.cs" />
@@ -382,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609192056594_CreditCardType.resx">
       <DependentUpon>201609192056594_CreditCardType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609192221071_MigrationCheck.resx">
+      <DependentUpon>201609192221071_MigrationCheck.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

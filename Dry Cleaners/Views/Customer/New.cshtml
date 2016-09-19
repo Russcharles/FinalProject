@@ -1,4 +1,4 @@
-﻿@model Dry_Cleaners.ViewModels.NewCustomerViewModel 
+﻿@model Dry_Cleaners.ViewModels.NewCustomerViewModel
 
 
 @{
@@ -10,7 +10,7 @@
 {
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.FirstName)
-        @Html.TextBoxFor(m => m.Customer.FirstName, new {@class = "form-control" })
+        @Html.TextBoxFor(m => m.Customer.FirstName, new { @class = "form-control" })
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.LastName)
@@ -56,5 +56,18 @@
         @Html.LabelFor(m => m.Customer.CreditCardTypeID)
         @Html.DropDownListFor(m => m.Customer.CreditCardTypeID, new SelectList(Model.CreditCardInfo, "ID", "CreditCardType"), "Credit Card Type", new { @class = "form-control" })
     </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.CreditCardInfo2.CreditCardNumber)
+        @Html.TextBoxFor(m => m.CreditCardInfo2.CreditCardNumber, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.CreditCardInfo2.CVC)
+        @Html.TextBoxFor(m => m.CreditCardInfo2.CVC, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.CreditCardInfo2.Zipcode)
+        @Html.TextBoxFor(m => m.CreditCardInfo2.Zipcode, new { @class = "form-control" })
+    </div>
+
     <button type="submit" class="btn btn-primary">Save</button>
 }
