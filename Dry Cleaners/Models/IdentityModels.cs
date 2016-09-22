@@ -26,6 +26,7 @@ namespace Dry_Cleaners.Models
         public DbSet<MembershipType> MembershipType { get; set; }
 
         public DbSet<CreditCardInfo> CreditCardInfo { get; set; }
+        public DbSet<Order> Order { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
