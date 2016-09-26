@@ -2,31 +2,36 @@
 @{
     ViewBag.Title = "PlaceOrder";
 }
+<body style="background-color: #e5e3e2">
+    <p style="font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;font-size:30px;font-weight:bold;color:#120c4a;">New Order</p>
 
-<h2>New Order</h2>
 
-
-@using (Html.BeginForm("Create", "Order"))
-{
-    <div class="form-group">
-        @Html.LabelFor(m => m.Order.AmountOfPants)
-        @Html.TextBoxFor(m => m.Order.AmountOfPants, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Order.AmountOfDresses)
-        @Html.TextBoxFor(m => m.Order.AmountOfDresses, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Order.AmountOfShirts)
-        @Html.TextBoxFor(m => m.Order.AmountOfShirts, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Order.AmountOfSuits)
-        @Html.TextBoxFor(m => m.Order.AmountOfSuits, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Order.CommentSection)
-        @Html.TextBoxFor(m => m.Order.CommentSection, new { @class = "form-control" })
-    </div>
-    <button type="submit" class="btn btn-primary">Save</button>
-}
+    @using (Html.BeginForm("Create", "Order"))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.AmountOfPants)
+            @Html.TextBoxFor(m => m.Order.AmountOfPants, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.AmountOfDresses)
+            @Html.TextBoxFor(m => m.Order.AmountOfDresses, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.AmountOfShirts)
+            @Html.TextBoxFor(m => m.Order.AmountOfShirts, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.AmountOfSuits)
+            @Html.TextBoxFor(m => m.Order.AmountOfSuits, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.CommentSection)
+            @Html.TextBoxFor(m => m.Order.CommentSection, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Order.EmailAddress)
+            @Html.TextBoxFor(m => m.Order.EmailAddress, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    }
+    </body>
