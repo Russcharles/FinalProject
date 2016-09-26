@@ -1,0 +1,19 @@
+﻿@model Dry_Cleaners.ViewModels.PickUpViewModel
+@{
+    ViewBag.Title = "PickUp";
+}
+
+<body style="background-color: #e5e3e2">
+    <p style="font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;font-size:30px;font-weight:bold;color:#120c4a;">Pick Up Order</p>
+
+
+    @using (Html.BeginForm("Create", "PickUp"))
+    { <div class="form-group">
+        @Html.LabelFor(m => m.PickUp.EmailAddress)
+        @Html.TextBoxFor(m => m.PickUp.EmailAddress, new { @class = "form-control" })
+    </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    }
+</body>
+
