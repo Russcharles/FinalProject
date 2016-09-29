@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Twilio;
 
 namespace Dry_Cleaners.Controllers
 {
@@ -38,6 +39,12 @@ namespace Dry_Cleaners.Controllers
         {
             _context3.PickUp.Add(pickUp);
             _context3.SaveChanges();
+            string AccountSid = "AC689c96cd8452e930c202a9dcce990a0a";
+            string AuthToken = "c991d34dc4106be2225406d45785302f";
+            var twilio = new TwilioRestClient(AccountSid, AuthToken);
+
+            twilio.SendMessage(
+                "+13146359196 ", "+1" + pickUp.PhoneNumber, "Thank you for signing up!  You should be receive your personalized laundry bag with in 5-7 business days");
             return RedirectToAction("Index", "PickUp");
         }
     }

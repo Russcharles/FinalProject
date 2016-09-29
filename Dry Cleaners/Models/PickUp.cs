@@ -9,9 +9,9 @@ namespace Dry_Cleaners.Models
     public class PickUp
     {
         public byte ID { get; set; }
-        public string DayOfWeek { get; set; }
-        public string PickUpTime { get; set; }
-        [Display(Name = "Email Address Associated with Account")]
-        public string EmailAddress { get; set; }
+        public string Date { get; set; }
+        public string Time { get; set; }
+        [Display(Name = "Phone number Associated with Account")]
+        public string PhoneNumber { get; set; }
     }
 }

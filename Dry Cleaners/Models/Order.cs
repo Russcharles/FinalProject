@@ -23,7 +23,7 @@ namespace Dry_Cleaners.Models
         public int AmountOfDresses { get; set; }
         [Display(Name = "For Additional Instructions or Comments:")]
         public string CommentSection { get; set; }
-        [Display(Name = "Email Address Associated with Account")]
-        public string EmailAddress { get; set; }
+        [Display(Name = "Phone Number Associated with Account")]
+        public string PhoneNumber { get; set; }
     }
 }

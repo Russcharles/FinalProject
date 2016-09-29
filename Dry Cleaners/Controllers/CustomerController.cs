@@ -6,6 +6,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Twilio;
 
 namespace Dry_Cleaners.Controllers
 {
@@ -50,6 +51,12 @@ namespace Dry_Cleaners.Controllers
         {
             _context.Customer.Add(customer);
             _context.SaveChanges();
+            string AccountSid = "AC689c96cd8452e930c202a9dcce990a0a";
+            string AuthToken = "c991d34dc4106be2225406d45785302f";
+            var twilio = new TwilioRestClient(AccountSid, AuthToken);
+
+            twilio.SendMessage(
+                "+13146359196 ", "+1" + customer.PhoneNumber, "Thank you for signing up!  You should be receive your personalized laundry bag with in 5-7 business days");
             return RedirectToAction("Index", "Customer");
         }
     }

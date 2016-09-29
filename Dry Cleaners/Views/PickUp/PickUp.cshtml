@@ -9,8 +9,16 @@
 
     @using (Html.BeginForm("Create", "PickUp"))
     { <div class="form-group">
-        @Html.LabelFor(m => m.PickUp.EmailAddress)
-        @Html.TextBoxFor(m => m.PickUp.EmailAddress, new { @class = "form-control" })
+        @Html.LabelFor(m => m.PickUp.Date)
+        @Html.TextBoxFor(m => m.PickUp.Date, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PickUp.Time)
+        @Html.TextBoxFor(m => m.PickUp.Time, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PickUp.PhoneNumber)
+        @Html.TextBoxFor(m => m.PickUp.PhoneNumber, new { @class = "form-control" })
     </div>
         <button type="submit" class="btn btn-primary">Save</button>
 

@@ -21,7 +21,7 @@ namespace Dry_Cleaners.Models
         [Display(Name = "Zip Code")]
         public int ZipCode { get; set; }
         [Display(Name = "Phone Number")]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Display(Name = "Email Address")]
         public string EmailAddress { get; set; }
         public DryCleanerStores DryCleanerStores { get; set; }
